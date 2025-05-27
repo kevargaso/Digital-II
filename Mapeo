@@ -91,10 +91,7 @@
 │   │   ├── cells_io.vh
 │   │   ├── cores
 │   │   │   ├── bin2bcd
-│   │   │   │   ├── bin2bcd_TB copy.v
 │   │   │   │   ├── bin2bcd_TB.v
-│   │   │   │   ├── bin2bcd_tb.vcd
-│   │   │   │   ├── bin2bcd_TB.v.out
 │   │   │   │   ├── bin2bcd.v
 │   │   │   │   ├── perip_bin2bcd_TB.v
 │   │   │   │   └── perip_bin2bcd.v
