@@ -1,0 +1,56 @@
+[*]
+[*] GTKWave Analyzer v3.3.121 (w)1999-2024 BSI
+[*] Thu May 22 16:45:22 2025
+[*]
+[dumpfile] "/home/kevargaso/Documents/Digital II/version 1.0.2/build/bin2bcd_tb.vcd"
+[dumpfile_mtime] "Thu May 22 16:42:23 2025"
+[dumpfile_size] 106644
+[savefile] "/home/kevargaso/Documents/Digital II/version 1.0.2/basic/rtl/b.gtkw"
+[timestart] 4327000000000
+[size] 1920 988
+[pos] -1 -1
+*-39.637863 9537500000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] bin2bcd_tb.
+[sst_width] 209
+[signals_width] 233
+[sst_expanded] 1
+[sst_vpaned_height] 290
+@200
+-BIN2BCD TB
+@420
+bin2bcd_tb.CLK_PERIOD
+bin2bcd_tb.DECIMAL_DIGITS
+bin2bcd_tb.INPUT_WIDTH
+bin2bcd_tb.i
+@24
+bin2bcd_tb.i_Binary[15:0]
+@28
+bin2bcd_tb.i_Clock
+bin2bcd_tb.i_Start
+@24
+bin2bcd_tb.o_BCD[19:0]
+@28
+bin2bcd_tb.o_DV
+@200
+-UUT
+@420
+bin2bcd_tb.uut.DECIMAL_DIGITS
+bin2bcd_tb.uut.INPUT_WIDTH
+@22
+bin2bcd_tb.uut.count[4:0]
+@24
+bin2bcd_tb.uut.i_Binary[15:0]
+@22
+bin2bcd_tb.uut.i_Clock
+bin2bcd_tb.uut.i_Start
+bin2bcd_tb.uut.o_BCD[19:0]
+bin2bcd_tb.uut.o_DV
+bin2bcd_tb.uut.r_BCD[19:0]
+bin2bcd_tb.uut.r_Binary[15:0]
+bin2bcd_tb.uut.r_DV
+bin2bcd_tb.uut.r_Digit_Index[4:0]
+bin2bcd_tb.uut.r_Loop_Count[7:0]
+bin2bcd_tb.uut.r_SM_Main[2:0]
+bin2bcd_tb.uut.w_BCD_Digit[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

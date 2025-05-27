@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<efx:project last_change_date="Date : 2024-09-12 10:27" location="." name="SOC" sw_version="2023.2.307"
+ xmlns:efx="http://www.efinixinc.com/enf_proj">
+  <efx:device_info>
+    <efx:family name="Trion"/>
+    <efx:device name="T20Q144"/>
+    <efx:timing_model name="C3"/>
+  </efx:device_info>
+  <efx:design_info>
+    <efx:top_module name="SOC"/>
+    <efx:design_file library="default" name="SOC.v" version="default"/>
+    <efx:design_file library="default" name="cores/cpu/femtorv32_quark.v" version="default"/>
+    <efx:design_file library="default" name="cores/uart/perip_uart.v" version="default"/>
+    <efx:design_file library="default" name="cores/uart/uart.v" version="default"/>
+    <efx:design_file library="default" name="cores/mult/perip_mult.v" version="default"/>
+    <efx:design_file library="default" name="cores/mult/mult.v" version="default"/>
+    <efx:design_file library="default" name="cores/bram/bram.v" version="default"/>
+  </efx:design_info>
+  <efx:constraint_info>
+    <efx:sdc_file name="SOC.sdc"/>
+  </efx:constraint_info>
+  <efx:misc_info/>
+  <efx:ip_info/>
+</efx:project>
+
+

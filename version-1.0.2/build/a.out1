@@ -1,0 +1,18 @@
+**** module/scope: uart
+     Flip-Flops   : 63
+     Logic Gates  : 981
+     ADDER[4]: 4 units
+     EQUALITY[32]: 9 units
+     MUX[2]: 145 slices
+     LPM[8]: 1 unaccounted
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
+**** TOTALS
+     Flip-Flops   : 63
+     Logic Gates  : 981
+     ADDER[4]: 4 units
+     EQUALITY[32]: 9 units
+     MUX[2]: 145 slices
+     LPM[8]: 1 unaccounted
+     LOG[13]: 1 unaccounted
+     LOG[14]: 1 unaccounted
