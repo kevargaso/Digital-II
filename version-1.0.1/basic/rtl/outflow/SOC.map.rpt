@@ -1,0 +1,184 @@
+Efinity Synthesis report for project SOC
+Version: 2023.2.307
+Generated at: Sep 23, 2024 12:37:33
+Copyright (C) 2013 - 2023  All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+Top-level Entity Name : SOC
+
+### ### File List (begin) ### ### ###
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/perip_mult.v
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v
+/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v
+### ### File List (end) ### ### ###
+
+"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'registerFile'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 26
+Total number of FFs with enable signals: 285
+CE signal <ceg_net77>, number of controlling flip flops: 37
+CE signal <CPU/n3447>, number of controlling flip flops: 33
+CE signal <ceg_net32>, number of controlling flip flops: 1
+CE signal <CPU/state[2]>, number of controlling flip flops: 22
+CE signal <per_uart/n25>, number of controlling flip flops: 3
+CE signal <per_uart/n15>, number of controlling flip flops: 8
+CE signal <ceg_net530>, number of controlling flip flops: 5
+CE signal <ceg_net176>, number of controlling flip flops: 4
+CE signal <per_uart/uart0/n581>, number of controlling flip flops: 8
+CE signal <ceg_net140>, number of controlling flip flops: 1
+CE signal <ceg_net144>, number of controlling flip flops: 1
+CE signal <per_uart/uart0/n582>, number of controlling flip flops: 8
+CE signal <per_uart/uart0/n316>, number of controlling flip flops: 1
+CE signal <ceg_net203>, number of controlling flip flops: 4
+CE signal <ceg_net155>, number of controlling flip flops: 1
+CE signal <ceg_net159>, number of controlling flip flops: 8
+CE signal <ceg_net246>, number of controlling flip flops: 4
+CE signal <mult1/n402>, number of controlling flip flops: 16
+CE signal <mult1/n403>, number of controlling flip flops: 16
+CE signal <mult1/n165>, number of controlling flip flops: 32
+CE signal <mult1/n404>, number of controlling flip flops: 1
+CE signal <ceg_net913>, number of controlling flip flops: 32
+CE signal <ceg_net252>, number of controlling flip flops: 1
+CE signal <ceg_net839>, number of controlling flip flops: 32
+CE signal <ceg_net847>, number of controlling flip flops: 5
+CE signal <ceg_net564>, number of controlling flip flops: 1
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 3
+Total number of FFs with set/reset signals: 150
+SR signal <resetn>, number of controlling flip flops: 144
+SR signal <per_uart/uart0/n601>, number of controlling flip flops: 1
+SR signal <per_uart/uart0/n552>, number of controlling flip flops: 5
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF Output: uart_dout[10](=0)
+FF Output: uart_dout[11](=0)
+FF Output: uart_dout[12](=0)
+FF Output: uart_dout[13](=0)
+FF Output: uart_dout[14](=0)
+FF Output: uart_dout[15](=0)
+FF Output: uart_dout[16](=0)
+FF Output: uart_dout[17](=0)
+FF Output: uart_dout[18](=0)
+FF Output: uart_dout[19](=0)
+FF Output: uart_dout[20](=0)
+FF Output: uart_dout[21](=0)
+FF Output: uart_dout[22](=0)
+FF Output: uart_dout[23](=0)
+FF Output: uart_dout[24](=0)
+FF Output: uart_dout[25](=0)
+FF Output: uart_dout[26](=0)
+FF Output: uart_dout[27](=0)
+FF Output: uart_dout[28](=0)
+FF Output: uart_dout[29](=0)
+FF Output: uart_dout[30](=0)
+FF Output: uart_dout[31](=0)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                 FFs        ADDs        LUTs      RAMs DSP/MULTs
+----------------------------------------------         ---        ----        ----      ---- ---------
+SOC:SOC                                             340(0)      175(0)     973(84)     36(0)      0(0)
+ +CPU:FemtoRV32                                   129(129)    143(143)    655(655)      4(4)      0(0)
+ +RAM:bram                                            0(0)        0(0)        8(8)    32(32)      0(0)
+ +per_uart:peripheral_uart(clk_freq=33333333)       73(21)        0(0)      84(22)      0(0)      0(0)
+  +uart0:uart(freq_hz=33333333)                     52(52)        0(0)      62(62)      0(0)      0(0)
+ +mult1:peripheral_mult                            138(65)       32(0)     142(54)      0(0)      0(0)
+  +mult1:mult                                       73(73)      32(32)      88(88)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+ Clock     Flip-Flops   Memory Ports    Multipliers
+ -----     ----------   ------------    -----------
+   clk            340             72              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Memory Mapping Report (begin) ### ### ###
+
+1. RAM/MEM (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:12):
+	EFX_RAM_5K: RAM/MEM__D$c12
+	EFX_RAM_5K: RAM/MEM__D$d12
+	EFX_RAM_5K: RAM/MEM__D$e12
+	EFX_RAM_5K: RAM/MEM__D$f12
+	EFX_RAM_5K: RAM/MEM__D$g12
+	EFX_RAM_5K: RAM/MEM__D$h12
+	EFX_RAM_5K: RAM/MEM__D$i12
+	EFX_RAM_5K: RAM/MEM__D$j1
+	EFX_RAM_5K: RAM/MEM__D$b1b2
+	EFX_RAM_5K: RAM/MEM__D$b1212
+	EFX_RAM_5K: RAM/MEM__D$b12b12
+	EFX_RAM_5K: RAM/MEM__D$b12c12
+	EFX_RAM_5K: RAM/MEM__D$b12d12
+	EFX_RAM_5K: RAM/MEM__D$b12e12
+	EFX_RAM_5K: RAM/MEM__D$b12f12
+	EFX_RAM_5K: RAM/MEM__D$b12g1
+	EFX_RAM_5K: RAM/MEM__D$1b2
+	EFX_RAM_5K: RAM/MEM__D$1212
+	EFX_RAM_5K: RAM/MEM__D$12b12
+	EFX_RAM_5K: RAM/MEM__D$12c12
+	EFX_RAM_5K: RAM/MEM__D$12d12
+	EFX_RAM_5K: RAM/MEM__D$12e12
+	EFX_RAM_5K: RAM/MEM__D$12f12
+	EFX_RAM_5K: RAM/MEM__D$12g1
+	EFX_RAM_5K: RAM/MEM__D$b2
+	EFX_RAM_5K: RAM/MEM__D$212
+	EFX_RAM_5K: RAM/MEM__D$2b12
+	EFX_RAM_5K: RAM/MEM__D$2c12
+	EFX_RAM_5K: RAM/MEM__D$2d12
+	EFX_RAM_5K: RAM/MEM__D$2e12
+	EFX_RAM_5K: RAM/MEM__D$2f12
+	EFX_RAM_5K: RAM/MEM__D$2g1
+
+### ### Memory Mapping Report (end) ### ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T20Q144
+project : SOC
+project-xml : SOC.xml
+root : SOC
+I,include : .
+output-dir : outflow
+work-dir : work_syn
+write-efx-verilog : outflow/SOC.map.v
+binary-db : outflow/SOC.vdb
+insert-ios : 0
+max-carry-cascade : 240
+max_mult : -1
+max_ram : -1
+mode : speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	3
+OUTPUT PORTS    : 	2
+
+EFX_ADD         : 	175
+EFX_LUT4        : 	973
+   1-2  Inputs  : 	128
+   3    Inputs  : 	339
+   4    Inputs  : 	506
+EFX_FF          : 	340
+EFX_RAM_5K      : 	36
+EFX_GBUFCE      : 	1
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 10s
+Elapsed synthesis time : 10s

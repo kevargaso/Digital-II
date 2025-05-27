@@ -1,0 +1,27 @@
+
+Efinity Interface Designer Timing Report
+Version: 2023.2.307
+Date: 2024-09-23 12:37
+
+Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+Device: T20Q144
+Project: SOC
+Timing Model: C3 (final)
+
+---------- 1. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++---------------+----------+-----------+----------+----------+
+| Instance Name | Pin Name | Parameter | Max (ns) | Min (ns) |
++---------------+----------+-----------+----------+----------+
+|      clk      |   clk    |  GPIO_IN  |  1.815   |  0.698   |
+|     resetn    |  resetn  |  GPIO_IN  |  1.815   |  0.698   |
+|      RXD      |   RXD    |  GPIO_IN  |  2.205   |  0.848   |
+|      LEDS     |   LEDS   |  GPIO_OUT |  4.636   |  1.783   |
+|      TXD      |   TXD    |  GPIO_OUT |  5.368   |  2.065   |
++---------------+----------+-----------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------

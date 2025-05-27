@@ -1,0 +1,70 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Date: Mon Sep 23 12:37:57 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20Q144
+Top-level Entity Name: SOC
+
+---------- Resource Summary (begin) ----------
+Inputs: 3 / 224 (1.34%)
+Outputs: 2 / 501 (0.40%)
+Clocks: 1 / 16 (6.25%)
+Logic Elements: 1206 / 19728 (6.11%)
+	LE: LUTs/Adders: 1150 / 19728 (5.83%)
+	LE: Registers: 340 / 13920 (2.44%)
+Memory Blocks: 36 / 204 (17.65%)
+Multipliers: 0 / 36 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++-------------------------+------+------------+-------------+------------+------------+
+|          NAME           | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++-------------------------+------+------------+-------------+------------+------------+
+|     RAM/MEM__D$c12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|  CPU/registerFile__D$1  | SDP  |     16     |     16      | READ_FIRST |   false    |
+|  CPU/registerFile__D$2  | SDP  |     16     |     16      | READ_FIRST |   false    |
+| CPU/registerFile_2__D$2 | SDP  |     16     |     16      | READ_FIRST |   false    |
+| CPU/registerFile_2__D$1 | SDP  |     16     |     16      | READ_FIRST |   false    |
+|     RAM/MEM__D$2b12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$b1b2     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$d12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$12b12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|      RAM/MEM__D$b2      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$1b2      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$e12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b12b12    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$f12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$g12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$h12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$i12      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|      RAM/MEM__D$j1      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b1212     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b12c12    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b12d12    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b12e12    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b12f12    | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$b12g1     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$1212     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$12c12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$12d12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$12e12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|    RAM/MEM__D$12f12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$12g1     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$212      | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$2c12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$2d12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$2e12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$2f12     | SDP  |     1      |      1      | READ_FIRST |   false    |
+|     RAM/MEM__D$2g1      | SDP  |     1      |      1      | READ_FIRST |   false    |
++-------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+Elapsed time for routing: 0 hours 0 minutes 1 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 7 seconds

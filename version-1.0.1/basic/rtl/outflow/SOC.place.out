@@ -1,0 +1,211 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20Q144" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "outflow/SOC.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.01833 seconds.
+	VDB Netlist Checker took 0.01 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 184.584 MB, end = 184.584 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 47.032 MB, end = 47.032 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 50.524 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'outflow/SOC.interface.csv'.
+Successfully processed interface constraints file "outflow/SOC.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+Pass 0: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 0 blocks in total.
+Removed 0 LUT buffers.
+Successfully created VPR logical netlist from Verific binary DataBase file "outflow/SOC.vdb".
+Netlist pre-processing took 0.0361706 seconds.
+	Netlist pre-processing took 0.03 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 184.584 MB, end = 186.3 MB, delta = 1.716 MB
+Netlist pre-processing resident set memory usage: begin = 47.032 MB, end = 49.692 MB, delta = 2.66 MB
+	Netlist pre-processing peak resident set memory usage = 50.524 MB
+***** Ending stage netlist pre-processing *****
+
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "work_pnr/SOC.net_proto" took 0.000902 seconds
+Creating IO constraints file 'work_pnr/SOC.io_place'
+Packing took 0.00479162 seconds.
+	Packing took 0 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 190.056 MB, end = 190.584 MB, delta = 0.528 MB
+Packing resident set memory usage: begin = 53.908 MB, end = 54.612 MB, delta = 0.704 MB
+	Packing peak resident set memory usage = 54.612 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file work_pnr/SOC.net_proto
+Read proto netlist for file "work_pnr/SOC.net_proto" took 0.000242 seconds
+Setup net and block data structure took 0.025313 seconds
+Packed netlist loading took 0.0613576 seconds.
+	Packed netlist loading took 0.08 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 190.584 MB, end = 1023.4 MB, delta = 832.82 MB
+Packed netlist loading resident set memory usage: begin = 54.612 MB, end = 72.588 MB, delta = 17.976 MB
+	Packed netlist loading peak resident set memory usage = 72.94 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+
+SDC file 'SOC.sdc' parsed successfully.
+1 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'outflow/SOC.interface.csv'.
+Successfully processed interface constraints file "outflow/SOC.interface.csv".
+Writing IO placement constraints to 'outflow/SOC.interface.io'.
+
+Reading placement constraints from 'outflow/SOC.interface.io'.
+
+Reading placement constraints from 'work_pnr/SOC.io_place'.
+WARNING(1): Clock driver clk should use the dedicated clock pad.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Create outflow/SOC_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 12 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1     1387505           17205         6.8%
+          2     1125810           17205        10.3%
+          3     1342811           16795        11.2%
+          4     1432986           16956        11.2%
+          5      641939           17011        11.2%
+          6      353470           17051        11.6%
+          7      210934           17091        13.1%
+          8      186593           17342        16.6%
+          9      126522           16448        21.3%
+         10       85694           15206        26.6%
+         11       74480           14445        33.3%
+         12       62291           13439        38.8%
+         13       64572           13739        48.3%
+         14       54609           12456        49.7%
+         15       69866           12986        55.4%
+         16       52492           13081        55.4%
+         17       67451           12429        58.4%
+         18       59881           12238        58.4%
+         19       68749           12641        58.7%
+         20       57206           12191        58.7%
+         21       70935           13049        62.3%
+         22       49483           12016        62.3%
+         23       61699           13256        67.9%
+         24       50568           12034        67.9%
+         25       60752           12377        70.8%
+         26       48351           11698        70.8%
+         27       62263           12123        72.6%
+         28       49745           12292        72.6%
+         29       59610           12188        75.3%
+         30       46332           11523        75.3%
+         31       58364           11284        79.1%
+         32       48183           11467        79.1%
+         33       58475           11362        80.2%
+         34       46662           11880        80.2%
+         35       57440           12241        82.5%
+         36       46190           11833        82.5%
+         37       56272           12058        83.9%
+         38       49451           11630        83.9%
+         39       55946           12335        84.5%
+         40       46475           12060        84.5%
+         41       53146           12433        87.1%
+         42       48811           12113        87.1%
+         43       52694           11565        87.7%
+         44       49443           11761        87.7%
+         45       52652           11624        88.2%
+         46       47514           11231        88.2%
+         47       52564           11836        88.7%
+         48       48540           11447        88.7%
+         49       50317           11182        90.0%
+         50       49169           10647        90.0%
+         51       50295           11972        90.0%
+         52       48087           11168        90.0%
+         53       48483           11506        90.4%
+         54       48480           10897        91.1%
+         55       48384           10640        91.1%
+         56       49294           10412        91.9%
+         57       47877           10861        91.9%
+         58       48007           11482        92.6%
+         59       48974           11262        93.3%
+         60       48887           11014        93.3%
+         61       48954           11046        94.2%
+         62       49063           11381        95.2%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0       47877           20424        30.0
+          1       33539           23803        30.0
+          2       20310           23588        30.0
+          3       19369           23833        30.0
+          4       18811           23445        30.0
+          5       16559           22171        30.0
+          6       16357           22799        30.0
+          7       14856           21485        30.0
+          8       14984           21480        30.0
+          9       14545           21084        30.0
+         10       14633           21494        30.0
+         11       14047           21351        30.0
+         12       13995           21726        30.0
+         13       13516           21787        30.0
+         14       13719           21898        30.0
+         15       13288           22668        30.0
+         16       13436           22529        30.0
+         17       12920           21587        29.7
+         18       12804           21624        29.4
+         19       12730           22042        28.6
+         20       12761           21873        27.9
+         21       12430           22923        26.8
+         22       12403           21778        26.0
+         23       12323           22070        24.8
+         24       12245           21914        23.8
+         25       12189           21914        22.6
+         26       12119           21545        21.4
+         27       11896           21899        20.2
+         28       12011           22041        19.1
+         29       11865           21872        17.9
+         30       11839           21238        16.9
+         31       11689           20889        15.5
+         32       11751           20440        14.1
+Generate outflow/SOC_after_qp.qdelay
+Placement successful: 1242 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0993173 at 49,25
+Congestion-weighted HPWL per net: 6.37311
+
+Reading placement constraints from 'outflow/SOC.qplace'.
+Finished Realigning Types (331 blocks needed type change)
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'outflow/SOC.place'
+Placement took 2.14896 seconds.
+	Placement took 4.24 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 1032.41 MB, end = 1678.7 MB, delta = 646.296 MB
+Placement resident set memory usage: begin = 82.26 MB, end = 257.908 MB, delta = 175.648 MB
+	Placement peak resident set memory usage = 259.288 MB
+***** Ending stage placement *****
+
+The entire flow of EFX_PNR took 5.33801 seconds.
+	The entire flow of EFX_PNR took 7.22 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 173.116 MB, end = 1678.7 MB, delta = 1505.59 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 29.896 MB, end = 257.908 MB, delta = 228.012 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 259.288 MB

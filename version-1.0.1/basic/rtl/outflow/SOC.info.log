@@ -1,0 +1,402 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 23, 2024 12:33:17
+///////////////////////////////////
+
+[EFX-0012 VERI-INFO] default VHDL library search path is now "/home/carlos/Embedded/efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504) 
+[EFX-0011 VERI-WARNING] parameter 'divisor' becomes localparam in 'uart' with formal parameter declaration list (VERI-1199) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:24)
+[EFX-0012 VERI-INFO] compiling module 'SOC' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:1)
+[EFX-0012 VERI-INFO] compiling module 'FemtoRV32' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:37)
+[EFX-0012 VERI-INFO] extracting RAM for identifier 'registerFile' (VERI-2571) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:174)
+[EFX-0011 VERI-WARNING] expression size 25 truncated to fit in target size 24 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:200)
+[EFX-0011 VERI-WARNING] synthesis - simulation differences may occur when using parallel_case directive (VERI-1174) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:342)
+[EFX-0012 VERI-INFO] compiling module 'bram' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:3)
+[EFX-0012 VERI-INFO] extracting RAM for identifier 'MEM' (VERI-2571) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:12)
+[EFX-0012 VERI-INFO] compiling module 'peripheral_uart(clk_freq=33333333)' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:1)
+[EFX-0012 VERI-INFO] compiling module 'uart(freq_hz=33333333)' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:5)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 16 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:39)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:88)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:91)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:137)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:140)
+[EFX-0012 VERI-INFO] compiling module 'peripheral_mult' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/perip_mult.v:1)
+[EFX-0012 VERI-INFO] compiling module 'mult' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v:1)
+[EFX-0011 VERI-WARNING] expression size 6 truncated to fit in target size 5 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v:83)
+[EFX-0011 VERI-WARNING] net 'gpio_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0011 VERI-WARNING] net 'div_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:40)
+[EFX-0011 VERI-WARNING] net 'bin2bcd_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:41)
+[EFX-0011 VERI-WARNING] net 'dpram_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:42)
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+[EFX-0012 VERI-INFO] compiling module 'EFX_ADD' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:8)
+[EFX-0012 VERI-INFO] compiling module 'EFX_FF' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:21)
+[EFX-0012 VERI-INFO] compiling module 'EFX_COMB4' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:38)
+[EFX-0012 VERI-INFO] compiling module 'EFX_GBUFCE' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:48)
+[EFX-0012 VERI-INFO] compiling module 'EFX_LUT4' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:57)
+[EFX-0012 VERI-INFO] compiling module 'EFX_MULT' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:65)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP48' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:100)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP24' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:156)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP12' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:209)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_4K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:262)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_5K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:322)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DPRAM_5K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:394)
+[EFX-0012 VERI-INFO] compiling module 'RAMB5' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:499)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_10K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:561)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM10' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:653)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DPRAM10' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:754)
+[EFX-0012 VERI-INFO] compiling module 'EFX_SRL8' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:884)
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'registerFile'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+[EFX-0200 WARNING] Removing redundant signal : mem_addr[1]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:5)
+[EFX-0200 WARNING] Removing redundant signal : mem_addr[0]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:5)
+[EFX-0200 WARNING] Removing redundant signal : d_in[31]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[30]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[29]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[28]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[27]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[26]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[25]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[24]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[23]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[22]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[21]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[20]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[19]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[18]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[17]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[16]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[15]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[14]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0266 WARNING] Module Instance 'CPU' input pin tied to constant (mem_rbusy=0).
+[EFX-0266 WARNING] Module Instance 'CPU' input pin tied to constant (mem_wbusy=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[31]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[30]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[29]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[28]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[27]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[26]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[25]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[24]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[23]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[22]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85292KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85292KB)
+[EFX-0000 INFO] ... Mapping design "SOC"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FemtoRV32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FemtoRV32" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85292KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87356KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart(freq_hz=33333333)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart(freq_hz=33333333)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87356KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_uart(clk_freq=33333333)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_uart(clk_freq=33333333)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87356KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mult" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mult" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87356KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_mult" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_mult" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87356KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "SOC" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 245 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "SOC" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88148KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88148KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88148KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88148KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88148KB)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 350 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 141 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 4s CPU user time : 5s CPU sys time : 0s MEM : 107648KB)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 107648KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 974, ed: 3301, lv: 6, pw: 1753.55
+[EFX-0000 INFO] ... LUT mapping end (Real time : 3s CPU user time : 9s CPU sys time : 0s MEM : 129740KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 9s CPU sys time : 0s MEM : 129740KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 337 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 2 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 12s CPU sys time : 0s MEM : 129740KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 12s CPU sys time : 0s MEM : 129740KB)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	175
+[EFX-0000 INFO] EFX_LUT4        : 	973
+[EFX-0000 INFO] EFX_FF          : 	340
+[EFX-0000 INFO] EFX_RAM_5K      : 	36
+[EFX-0000 INFO] EFX_GBUFCE      : 	1
+[EFX-0000 INFO] =============================== 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 23, 2024 12:35:14
+///////////////////////////////////
+
+[EFX-0012 VERI-INFO] default VHDL library search path is now "/home/carlos/Embedded/efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504) 
+[EFX-0011 VERI-WARNING] parameter 'divisor' becomes localparam in 'uart' with formal parameter declaration list (VERI-1199) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:24)
+[EFX-0012 VERI-INFO] compiling module 'SOC' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:1)
+[EFX-0012 VERI-INFO] compiling module 'FemtoRV32' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:37)
+[EFX-0012 VERI-INFO] extracting RAM for identifier 'registerFile' (VERI-2571) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:174)
+[EFX-0011 VERI-WARNING] expression size 25 truncated to fit in target size 24 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:200)
+[EFX-0011 VERI-WARNING] synthesis - simulation differences may occur when using parallel_case directive (VERI-1174) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:342)
+[EFX-0012 VERI-INFO] compiling module 'bram' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:3)
+[EFX-0012 VERI-INFO] extracting RAM for identifier 'MEM' (VERI-2571) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:12)
+[EFX-0012 VERI-INFO] compiling module 'peripheral_uart(clk_freq=33333333)' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:1)
+[EFX-0012 VERI-INFO] compiling module 'uart(freq_hz=33333333)' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:5)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 16 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:39)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:88)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:91)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:137)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:140)
+[EFX-0012 VERI-INFO] compiling module 'peripheral_mult' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/perip_mult.v:1)
+[EFX-0012 VERI-INFO] compiling module 'mult' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v:1)
+[EFX-0011 VERI-WARNING] expression size 6 truncated to fit in target size 5 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v:83)
+[EFX-0011 VERI-WARNING] net 'gpio_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0011 VERI-WARNING] net 'div_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:40)
+[EFX-0011 VERI-WARNING] net 'bin2bcd_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:41)
+[EFX-0011 VERI-WARNING] net 'dpram_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:42)
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+[EFX-0012 VERI-INFO] compiling module 'EFX_ADD' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:8)
+[EFX-0012 VERI-INFO] compiling module 'EFX_FF' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:21)
+[EFX-0012 VERI-INFO] compiling module 'EFX_COMB4' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:38)
+[EFX-0012 VERI-INFO] compiling module 'EFX_GBUFCE' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:48)
+[EFX-0012 VERI-INFO] compiling module 'EFX_LUT4' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:57)
+[EFX-0012 VERI-INFO] compiling module 'EFX_MULT' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:65)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP48' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:100)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP24' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:156)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP12' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:209)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_4K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:262)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_5K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:322)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DPRAM_5K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:394)
+[EFX-0012 VERI-INFO] compiling module 'RAMB5' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:499)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_10K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:561)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM10' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:653)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DPRAM10' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:754)
+[EFX-0012 VERI-INFO] compiling module 'EFX_SRL8' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:884)
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'registerFile'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+[EFX-0200 WARNING] Removing redundant signal : mem_addr[1]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:5)
+[EFX-0200 WARNING] Removing redundant signal : mem_addr[0]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:5)
+[EFX-0200 WARNING] Removing redundant signal : d_in[31]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[30]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[29]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[28]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[27]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[26]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[25]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[24]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[23]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[22]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[21]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[20]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[19]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[18]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[17]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[16]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[15]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[14]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0266 WARNING] Module Instance 'CPU' input pin tied to constant (mem_rbusy=0).
+[EFX-0266 WARNING] Module Instance 'CPU' input pin tied to constant (mem_wbusy=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[31]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[30]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[29]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[28]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[27]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[26]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[25]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[24]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[23]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[22]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85324KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85324KB)
+[EFX-0000 INFO] ... Mapping design "SOC"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FemtoRV32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FemtoRV32" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85324KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87388KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart(freq_hz=33333333)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart(freq_hz=33333333)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87388KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_uart(clk_freq=33333333)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_uart(clk_freq=33333333)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87388KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mult" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mult" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87388KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_mult" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_mult" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87388KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "SOC" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 245 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "SOC" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88180KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88180KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88180KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88180KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88180KB)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 350 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 141 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 4s CPU user time : 5s CPU sys time : 0s MEM : 107624KB)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 107624KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 974, ed: 3301, lv: 6, pw: 1753.55
+[EFX-0000 INFO] ... LUT mapping end (Real time : 3s CPU user time : 9s CPU sys time : 0s MEM : 129800KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 9s CPU sys time : 0s MEM : 129800KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 337 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 2 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 12s CPU sys time : 0s MEM : 129800KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 12s CPU sys time : 0s MEM : 129800KB)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	175
+[EFX-0000 INFO] EFX_LUT4        : 	973
+[EFX-0000 INFO] EFX_FF          : 	340
+[EFX-0000 INFO] EFX_RAM_5K      : 	36
+[EFX-0000 INFO] EFX_GBUFCE      : 	1
+[EFX-0000 INFO] =============================== 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Sep 23, 2024 12:37:33
+///////////////////////////////////
+
+[EFX-0012 VERI-INFO] default VHDL library search path is now "/home/carlos/Embedded/efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504) 
+[EFX-0011 VERI-WARNING] parameter 'divisor' becomes localparam in 'uart' with formal parameter declaration list (VERI-1199) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:24)
+[EFX-0012 VERI-INFO] compiling module 'SOC' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:1)
+[EFX-0012 VERI-INFO] compiling module 'FemtoRV32' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:37)
+[EFX-0012 VERI-INFO] extracting RAM for identifier 'registerFile' (VERI-2571) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 5 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:174)
+[EFX-0011 VERI-WARNING] expression size 25 truncated to fit in target size 24 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:200)
+[EFX-0011 VERI-WARNING] synthesis - simulation differences may occur when using parallel_case directive (VERI-1174) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:342)
+[EFX-0012 VERI-INFO] compiling module 'bram' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:3)
+[EFX-0012 VERI-INFO] extracting RAM for identifier 'MEM' (VERI-2571) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:12)
+[EFX-0012 VERI-INFO] compiling module 'peripheral_uart(clk_freq=33333333)' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:1)
+[EFX-0012 VERI-INFO] compiling module 'uart(freq_hz=33333333)' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:5)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 16 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:39)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:88)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:91)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:137)
+[EFX-0011 VERI-WARNING] expression size 5 truncated to fit in target size 4 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/uart.v:140)
+[EFX-0012 VERI-INFO] compiling module 'peripheral_mult' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/perip_mult.v:1)
+[EFX-0012 VERI-INFO] compiling module 'mult' (VERI-1018) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v:1)
+[EFX-0011 VERI-WARNING] expression size 6 truncated to fit in target size 5 (VERI-1209) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/mult/mult.v:83)
+[EFX-0011 VERI-WARNING] net 'gpio_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0011 VERI-WARNING] net 'div_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:40)
+[EFX-0011 VERI-WARNING] net 'bin2bcd_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:41)
+[EFX-0011 VERI-WARNING] net 'dpram_dout[31]' does not have a driver (VDB-1002) (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:42)
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+[EFX-0012 VERI-INFO] compiling module 'EFX_ADD' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:8)
+[EFX-0012 VERI-INFO] compiling module 'EFX_FF' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:21)
+[EFX-0012 VERI-INFO] compiling module 'EFX_COMB4' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:38)
+[EFX-0012 VERI-INFO] compiling module 'EFX_GBUFCE' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:48)
+[EFX-0012 VERI-INFO] compiling module 'EFX_LUT4' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:57)
+[EFX-0012 VERI-INFO] compiling module 'EFX_MULT' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:65)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP48' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:100)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP24' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:156)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DSP12' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:209)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_4K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:262)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_5K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:322)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DPRAM_5K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:394)
+[EFX-0012 VERI-INFO] compiling module 'RAMB5' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:499)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM_10K' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:561)
+[EFX-0012 VERI-INFO] compiling module 'EFX_RAM10' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:653)
+[EFX-0012 VERI-INFO] compiling module 'EFX_DPRAM10' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:754)
+[EFX-0012 VERI-INFO] compiling module 'EFX_SRL8' (VERI-1018) (/home/carlos/Embedded/efinity/2023.2//sim_models/maplib/efinix_maplib.v:884)
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'registerFile'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/cpu/femtorv32_quark.v:100)
+[EFX-0200 WARNING] Removing redundant signal : mem_addr[1]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:5)
+[EFX-0200 WARNING] Removing redundant signal : mem_addr[0]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/bram/bram.v:5)
+[EFX-0200 WARNING] Removing redundant signal : d_in[31]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[30]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[29]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[28]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[27]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[26]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[25]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[24]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[23]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[22]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[21]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[20]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[19]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[18]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[17]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[16]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[15]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0200 WARNING] Removing redundant signal : d_in[14]. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/cores/uart/perip_uart.v:7)
+[EFX-0266 WARNING] Module Instance 'CPU' input pin tied to constant (mem_rbusy=0).
+[EFX-0266 WARNING] Module Instance 'CPU' input pin tied to constant (mem_wbusy=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[31]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[30]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[29]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[28]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[27]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[26]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[25]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[24]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[23]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'gpio_dout[22]'. (/Work/Proyects/ecb_T8_T113/femtoRV/basic/rtl/SOC.v:38)
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85396KB)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85396KB)
+[EFX-0000 INFO] ... Mapping design "SOC"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FemtoRV32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "FemtoRV32" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 85396KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "bram" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87404KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart(freq_hz=33333333)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart(freq_hz=33333333)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87404KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_uart(clk_freq=33333333)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_uart(clk_freq=33333333)" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87404KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mult" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "mult" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87404KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_mult" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "peripheral_mult" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 87404KB)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "SOC" begin
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 245 flops.
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "SOC" end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88196KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88196KB)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88196KB)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88196KB)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s CPU user time : 2s CPU sys time : 0s MEM : 88196KB)
+[EFX-0000 INFO] ... Sequential Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 350 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 141 equivalent points.
+[EFX-0000 INFO] ... Sequential Optimization end (Real time : 3s CPU user time : 5s CPU sys time : 0s MEM : 107960KB)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s CPU user time : 5s CPU sys time : 0s MEM : 107960KB)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 974, ed: 3301, lv: 6, pw: 1753.55
+[EFX-0000 INFO] ... LUT mapping end (Real time : 4s CPU user time : 9s CPU sys time : 0s MEM : 130112KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s CPU user time : 9s CPU sys time : 0s MEM : 130112KB)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'clk' with 337 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 2 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 3s CPU user time : 12s CPU sys time : 0s MEM : 130112KB)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s CPU user time : 12s CPU sys time : 0s MEM : 130112KB)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	175
+[EFX-0000 INFO] EFX_LUT4        : 	973
+[EFX-0000 INFO] EFX_FF          : 	340
+[EFX-0000 INFO] EFX_RAM_5K      : 	36
+[EFX-0000 INFO] EFX_GBUFCE      : 	1
+[EFX-0000 INFO] =============================== 

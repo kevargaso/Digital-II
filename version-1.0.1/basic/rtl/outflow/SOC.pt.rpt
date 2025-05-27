@@ -1,0 +1,182 @@
+
+Efinity Interface Designer Report
+Version: 2023.2.307
+Date: 2024-09-23 12:37
+
+Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+Device: T20Q144
+Project: SOC
+
+Package: 144-pin QFP (final)
+Timing Model: C3 (final)
+Configuration Mode: active (x1)
+
+---------- Table of Contents (begin) ----------
+   1. Periphery Usage Summary
+   2. Generated Output Files
+   3. I/O Banks Summary
+   4. Global Connection Summary
+   5. Clock Region Usage Summary
+   6. Dual-Function Configuration Pin Usage
+   7. GPIO Usage Summary
+   8. PLL Usage Summary
+   9. LVDS Rx Usage Summary
+   10. LVDS Tx Usage Summary
+   11. Clock Mux Usage Summary
+   12. Configuration Control Usage Summary
+   13. JTAG Usage Summary
+---------- Table of Contents (end) ------------
+
+---------- 1. Periphery Usage Summary (begin) ----------
+clkmux: 2 / 2 (100.0%)
+control: 0 / 1 (0.0%)
+gpio: 5 / 71 (7.04%)
+jtag: 0 / 2 (0.0%)
+lvds_bg: 0 / 1 (0.0%)
+lvds_rx: 0 / 7 (0.0%)
+lvds_tx: 0 / 6 (0.0%)
+pll: 0 / 5 (0.0%)
+---------- Periphery Usage Summary (end) ----------
+
+---------- 2. Generated Output Files (begin) ----------
+Interface Configuration: SOC.interface.csv
+Peripheral Block Configuration: SOC.lpf
+Pinout Report: SOC.pinout.rpt
+Pinout CSV: SOC.pinout.csv
+Timing Report: SOC.pt_timing.rpt
+Timing SDC Template: SOC.pt.sdc
+Verilog Template: SOC_template.v
+Option Register File: SOC_or.ini
+---------- Generated Output Files (end) ----------
+
+---------- 3. I/O Banks Summary (begin) ----------
+
++----------+-------------+
+| I/O Bank | I/O Voltage |
++----------+-------------+
+|    1A    |    3.3 V    |
+|    1B    |    3.3 V    |
+|  1C_1D   |    3.3 V    |
+|    1E    |    3.3 V    |
+|    3A    |    3.3 V    |
+|  3B_3C   |    3.3 V    |
+|    3D    |    3.3 V    |
+|    3E    |    3.3 V    |
+|    4A    |    3.3 V    |
+|    4B    |    3.3 V    |
+|    BR    |    1.2 V    |
+|    TL    |    1.2 V    |
+|    TR    |    1.2 V    |
++----------+-------------+
+
+---------- I/O Banks Summary (end) ----------
+
+---------- 4. Global Connection Summary (begin) ----------
+
+No global connection was found in project.
+
+---------- Global Connection Summary (end) ----------
+
+---------- 5. Clock Region Usage Summary (begin) ----------
+
++--------------+----------------+
+| Clock Region | Used/Available |
++--------------+----------------+
+|      B       |      0/16      |
+|      L0      |      0/4       |
+|      L1      |      0/4       |
+|      L2      |      0/4       |
+|      R0      |      0/4       |
+|      R1      |      0/4       |
+|      R2      |      0/4       |
+|      T       |      0/16      |
++--------------+----------------+
+
+---------- Clock Region Usage Summary (end) ----------
+
+---------- 6. Dual-Function Configuration Pin Usage (begin) ----------
+
++---------------+----------+
+| Instance Name | Function |
++---------------+----------+
+|      LEDS     |   CDI2   |
+|     resetn    |  TEST_N  |
+|      TXD      |  CDI12   |
++---------------+----------+
+
+---------- Dual-Function Configuration Pin Usage (end) ----------
+
+---------- 7. GPIO Usage Summary (begin) ----------
+
+Global Unused Setting: input with weak pullup
+
++---------------+-----------+--------+----------+--------------+----------+----------------------+------------------+-------------+
+| Instance Name |  Resource |  Mode  | Register | Clock Region | I/O Bank |     I/O Standard     |     Pad Name     | Package Pin |
++---------------+-----------+--------+----------+--------------+----------+----------------------+------------------+-------------+
+|      clk      | GPIOR_157 | input  |          |              |    3E    | 3.3 V LVTTL / LVCMOS | GPIOR_157_PLLIN  |      75     |
+|      LEDS     |  GPIOL_12 | output |          |              |    1B    | 3.3 V LVTTL / LVCMOS |  GPIOL_12_CDI2   |      20     |
+|     resetn    | GPIOR_158 | input  |          |              |    3E    | 3.3 V LVTTL / LVCMOS | GPIOR_158_TEST_N |      74     |
+|      RXD      |  GPIOL_64 | input  |          |              |    1E    | 3.3 V LVTTL / LVCMOS |     GPIOL_64     |     144     |
+|      TXD      |  GPIOL_66 | output |          |              |    1E    | 3.3 V LVTTL / LVCMOS |  GPIOL_66_CDI12  |     142     |
++---------------+-----------+--------+----------+--------------+----------+----------------------+------------------+-------------+
+
+
+Input GPIO Configuration:
+=========================
+
++---------------+-----------+---------------------+-----------------+--------------+-----------------+------+
+| Instance Name | Input Pin | Alternate Input Pin | Input Clock Pin | Pull Up/Down | Schmitt Trigger | DDIO |
++---------------+-----------+---------------------+-----------------+--------------+-----------------+------+
+|      clk      |    clk    |                     |                 |     none     |     Disable     | none |
+|     resetn    |   resetn  |                     |                 | weak pullup  |     Disable     | none |
+|      RXD      |    RXD    |                     |                 | weak pullup  |     Disable     |      |
++---------------+-----------+---------------------+-----------------+--------------+-----------------+------+
+
+Output GPIO Configuration:
+==========================
+
++---------------+------------+------------------+----------------+-----------+------+
+| Instance Name | Output Pin | Output Clock Pin | Drive Strength | Slew Rate | DDIO |
++---------------+------------+------------------+----------------+-----------+------+
+|      LEDS     |    LEDS    |                  |       3        |  Disable  | none |
+|      TXD      |    TXD     |                  |       1        |  Disable  |      |
++---------------+------------+------------------+----------------+-----------+------+
+
+---------- GPIO Usage Summary (end) ----------
+
+---------- 8. PLL Usage Summary (begin) ----------
+
+No PLL was configured
+
+---------- PLL Usage Summary (end) ----------
+
+---------- 9. LVDS Rx Usage Summary (begin) ----------
+
+No LVDS Rx was configured
+
+---------- LVDS Rx Usage Summary (end) ----------
+
+---------- 10. LVDS Tx Usage Summary (begin) ----------
+
+No LVDS Tx was configured
+
+---------- LVDS Tx Usage Summary (end) ----------
+
+---------- 11. Clock Mux Usage Summary (begin) ----------
+
+No Clock Mux was configured
+
+---------- Clock Mux Usage Summary (end) ----------
+
+---------- 12. Configuration Control Usage Summary (begin) ----------
+
+No Configuration Control was configured
+
+---------- Configuration Control Usage Summary (end) ----------
+
+---------- 13. JTAG Usage Summary (begin) ----------
+
+No JTAG was configured
+
+---------- JTAG Usage Summary (end) ----------

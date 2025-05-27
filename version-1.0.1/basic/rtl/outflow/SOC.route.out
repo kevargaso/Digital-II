@@ -1,0 +1,155 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307 
+Compiled: Dec 15 2023.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20Q144" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "outflow/SOC.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.0201067 seconds.
+	VDB Netlist Checker took 0.02 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 187.704 MB, end = 187.704 MB, delta = 0 MB
+VDB Netlist Checker resident set memory usage: begin = 50.148 MB, end = 50.148 MB, delta = 0 MB
+	VDB Netlist Checker peak resident set memory usage = 53.252 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'outflow/SOC.interface.csv'.
+Successfully processed interface constraints file "outflow/SOC.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+Pass 0: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 0 blocks in total.
+Removed 0 LUT buffers.
+Successfully created VPR logical netlist from Verific binary DataBase file "outflow/SOC.vdb".
+Netlist pre-processing took 0.0393373 seconds.
+	Netlist pre-processing took 0.04 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 187.704 MB, end = 187.704 MB, delta = 0 MB
+Netlist pre-processing resident set memory usage: begin = 50.148 MB, end = 50.148 MB, delta = 0 MB
+	Netlist pre-processing peak resident set memory usage = 53.252 MB
+***** Ending stage netlist pre-processing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file work_pnr/SOC.net_proto
+Read proto netlist for file "work_pnr/SOC.net_proto" took 0.000494 seconds
+Setup net and block data structure took 0.028198 seconds
+Packed netlist loading took 0.09391 seconds.
+	Packed netlist loading took 0.09 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 187.704 MB, end = 1023.44 MB, delta = 835.736 MB
+Packed netlist loading resident set memory usage: begin = 50.148 MB, end = 72.416 MB, delta = 22.268 MB
+	Packed netlist loading peak resident set memory usage = 72.768 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+Run checks after load placement.
+WARNING(1): Clock driver clk should use the dedicated clock pad.
+Successfully loaded placement data from "outflow/SOC.place".
+
+***** Beginning stage routing graph generation ... *****
+Read ipin pattern from /home/carlos/Embedded/efinity/2023.2//arch/./ipin_oph.xml
+Finished parsing ipin pattern file '/home/carlos/Embedded/efinity/2023.2//arch/./ipin_oph.xdb'.
+Finished parsing switch_block file '/home/carlos/Embedded/efinity/2023.2//arch/./sb_connectivity_subset.xdb'.
+BuildGraph process took 1.73653 seconds.
+	BuildGraph process took 1.64 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 1032.35 MB, end = 1421.37 MB, delta = 389.02 MB
+BuildGraph process resident set memory usage: begin = 82.092 MB, end = 471.908 MB, delta = 389.816 MB
+	BuildGraph process peak resident set memory usage = 471.908 MB
+check rr_graph process took 0.0532864 seconds.
+	check rr_graph process took 0.05 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 1448.94 MB, end = 1448.94 MB, delta = 0 MB
+check rr_graph process resident set memory usage: begin = 499.628 MB, end = 499.816 MB, delta = 0.188 MB
+	check rr_graph process peak resident set memory usage = 504.116 MB
+Generated 1176311 RR nodes and 4451293 RR edges
+This design has 0 global control net(s). See outflow/SOC.route.rpt for details.
+Routing graph took 1.84583 seconds.
+	Routing graph took 1.74 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 1032.35 MB, end = 1409.87 MB, delta = 377.52 MB
+Routing graph resident set memory usage: begin = 82.092 MB, end = 460.744 MB, delta = 378.652 MB
+	Routing graph peak resident set memory usage = 504.116 MB
+***** Ending stage routing graph generation *****
+
+***** Beginning stage routing ... *****
+
+SDC file 'SOC.sdc' parsed successfully.
+1 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+         1         5585              21.69               0.55
+         2          562              22.01              0.348
+         3          113              22.04              0.223
+         4            0              22.21             0.0972
+
+Successfully routed netlist after 4 routing iterations and 7139757 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+
+Serial number (magic cookie) for the routing is: 1251840088
+Netlist fully routed.
+
+Successfully created FPGA route file 'outflow/SOC.route'
+Routing took 1.49256 seconds.
+	Routing took 1.98 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 1409.87 MB, end = 1498.08 MB, delta = 88.216 MB
+Routing resident set memory usage: begin = 460.744 MB, end = 472.784 MB, delta = 12.04 MB
+	Routing peak resident set memory usage = 537.088 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+
+SDC file 'SOC.sdc' parsed successfully.
+1 clocks (including virtual clocks), 0 inputs and 0 outputs were constrained.
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+    clk         22.368        44.707         (R-R)
+
+Geomean max period: 22.368
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+      clk              clk             30.000           7.632            (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+      clk              clk             0.000            0.307            (R-R)
+
+Write Timing Report to "outflow/SOC.timing.rpt" ...
+final timing analysis took 0.107473 seconds.
+	final timing analysis took 0.11 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1498.08 MB, end = 1498.08 MB, delta = 0 MB
+final timing analysis resident set memory usage: begin = 472.784 MB, end = 483.4 MB, delta = 10.616 MB
+	final timing analysis peak resident set memory usage = 537.088 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'outflow/SOC.interface.csv'.
+Successfully processed interface constraints file "outflow/SOC.interface.csv".
+Finished writing bitstream file work_pnr/SOC.lbf.
+Bitstream generation took 0.332658 seconds.
+	Bitstream generation took 0.32 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1498.08 MB, end = 1541.31 MB, delta = 43.228 MB
+Bitstream generation resident set memory usage: begin = 483.4 MB, end = 519.344 MB, delta = 35.944 MB
+	Bitstream generation peak resident set memory usage = 537.088 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 7.16323 seconds.
+	The entire flow of EFX_PNR took 7.47 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 173.116 MB, end = 1375.89 MB, delta = 1202.78 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 29.892 MB, end = 354.032 MB, delta = 324.14 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 537.088 MB

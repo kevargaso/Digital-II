@@ -1,0 +1,14 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Sep 23, 2024 12:37:33
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
+SOC:SOC                                       	     340(0)	     175(0)	    973(84)	    36(0)	     0(0)	
+ +CPU:FemtoRV32                               	   129(129)	   143(143)	   655(655)	     4(4)	     0(0)	
+ +RAM:bram                                    	       0(0)	       0(0)	       8(8)	   32(32)	     0(0)	
+ +per_uart:peripheral_uart(clk_freq=33333333) 	     73(21)	       0(0)	     84(22)	     0(0)	     0(0)	
+  +uart0:uart(freq_hz=33333333)               	     52(52)	       0(0)	     62(62)	     0(0)	     0(0)	
+ +mult1:peripheral_mult                       	    138(65)	      32(0)	    142(54)	     0(0)	     0(0)	
+  +mult1:mult                                 	     73(73)	     32(32)	     88(88)	     0(0)	     0(0)	

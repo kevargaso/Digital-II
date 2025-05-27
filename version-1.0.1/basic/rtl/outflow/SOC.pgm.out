@@ -1,0 +1,23 @@
+
+Efinix FPGA Bitstream Generator.
+Version: 2023.2.307 
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+Compiled: Dec 15 2023.
+
+Using source file "work_pnr/SOC.lbf"
+Generating HEX programming file for device "T20Q144", family "Trion"
+Using periphery source file "outflow/SOC.lpf"
+Generating bit file: "outflow/SOC.bit"
+HEX Generation Options Summary:
+	Listing options specified to bitstream generation:
+	spi_low_power_mode                       = on
+	oscillator_clock_divider                 = DIV8
+	io_weak_pullup                           = on
+	release_tri_then_reset                   = on
+Finished generating "outflow/SOC.hex"
+Efinity Bitstream Generator took 3.21565 seconds.
+	Efinity Bitstream Generator took 3.14 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 57.184 MB, end = 91.256 MB, delta = 34.072 MB
+Efinity Bitstream Generator resident set memory usage: begin = 9.208 MB, end = 46.296 MB, delta = 37.088 MB
+	Efinity Bitstream Generator peak resident set memory usage = 52.16 MB
