@@ -1,0 +1,267 @@
+├── basic
+│   ├── firmware
+│   │   ├── asm
+│   │   │   ├── bin_to_bcd.o
+│   │   │   ├── bin_to_bcd.S
+│   │   │   ├── bram.ld
+│   │   │   ├── calculator.o
+│   │   │   ├── calculator.S
+│   │   │   ├── div.o
+│   │   │   ├── div.S
+│   │   │   ├── dpram.S
+│   │   │   ├── firmware.bin
+│   │   │   ├── firmware.elf
+│   │   │   ├── firmware_flash.hex
+│   │   │   ├── firmware_flash_intel.hex
+│   │   │   ├── firmware.hex
+│   │   │   ├── firmware.lst
+│   │   │   ├── firmware.map
+│   │   │   ├── firmware.v
+│   │   │   ├── for.S
+│   │   │   ├── getchar.o
+│   │   │   ├── getchar.S
+│   │   │   ├── Makefile
+│   │   │   ├── Makefile.ice
+│   │   │   ├── mult.o
+│   │   │   ├── mult.S
+│   │   │   ├── putchar.o
+│   │   │   ├── putchar.S
+│   │   │   ├── start.S
+│   │   │   ├── wait.o
+│   │   │   └── wait.S
+│   │   ├── c
+│   │   │   ├── firmware.elf
+│   │   │   ├── firmware.hex
+│   │   │   ├── firmware.lst
+│   │   │   ├── firmware.map
+│   │   │   ├── hello.c
+│   │   │   ├── hello.o
+│   │   │   ├── include
+│   │   │   │   └── femtostdlib.h
+│   │   │   ├── libfemtorv
+│   │   │   │   ├── crt0_baremetal.o
+│   │   │   │   ├── crt0_baremetal.S
+│   │   │   │   ├── cycles_32.c
+│   │   │   │   ├── cycles_32.o
+│   │   │   │   ├── cycles_64.S
+│   │   │   │   ├── femtorv32.inc
+│   │   │   │   ├── femtorv32.o
+│   │   │   │   ├── femtorv32.S
+│   │   │   │   ├── include
+│   │   │   │   │   ├── femtorv32.h
+│   │   │   │   │   ├── femtostdlib.h
+│   │   │   │   │   ├── HardwareConfig_bits.h
+│   │   │   │   │   └── HardwareConfig_bits.inc
+│   │   │   │   ├── libfemtorv32.a
+│   │   │   │   ├── libfemtorv.a
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── microwait.c
+│   │   │   │   ├── microwait.o
+│   │   │   │   ├── milliwait.c
+│   │   │   │   ├── milliwait.o
+│   │   │   │   ├── print.c
+│   │   │   │   ├── printf.c
+│   │   │   │   ├── printf.o
+│   │   │   │   ├── print.o
+│   │   │   │   ├── uart.o
+│   │   │   │   ├── uart.S
+│   │   │   │   ├── wait_cycles.c
+│   │   │   │   └── wait_cycles.o
+│   │   │   ├── linker.ld
+│   │   │   └── Makefile
+│   │   └── firmware_words_src
+│   │       ├── firmware_words
+│   │       ├── firmware_words.cpp
+│   │       └── Makefile
+│   ├── Makefile
+│   ├── rtl
+│   │   ├── a.out
+│   │   ├── bench_iverilog.v
+│   │   ├── bench_quark_flash.v
+│   │   ├── bench_quark.v
+│   │   ├── bench.vcd
+│   │   ├── b.gtkw
+│   │   ├── build
+│   │   │   ├── SOC.bit
+│   │   │   ├── SOC.json
+│   │   │   ├── SOC_out.config
+│   │   │   ├── SOC.rpt
+│   │   │   └── SOC.svf
+│   │   ├── cells_ff.vh
+│   │   ├── cells_io.vh
+│   │   ├── cores
+│   │   │   ├── bin2bcd
+│   │   │   │   ├── bin2bcd_TB copy.v
+│   │   │   │   ├── bin2bcd_TB.v
+│   │   │   │   ├── bin2bcd_tb.vcd
+│   │   │   │   ├── bin2bcd_TB.v.out
+│   │   │   │   ├── bin2bcd.v
+│   │   │   │   ├── perip_bin2bcd_TB.v
+│   │   │   │   └── perip_bin2bcd.v
+│   │   │   ├── bram
+│   │   │   │   └── bram.v
+│   │   │   ├── cpu
+│   │   │   │   ├── femtorv32_electron.v
+│   │   │   │   ├── femtorv32_gracilis.v
+│   │   │   │   ├── femtorv32_individua.v
+│   │   │   │   ├── femtorv32_intermissum.v
+│   │   │   │   ├── femtorv32_petitbateau.v
+│   │   │   │   ├── femtorv32_quark_bicycle.v
+│   │   │   │   ├── femtorv32_quark.v
+│   │   │   │   ├── femtorv32_quark_V2.v
+│   │   │   │   ├── femtorv32_tachyon.v
+│   │   │   │   └── femtorv32_testdrive.v
+│   │   │   ├── div
+│   │   │   │   ├── div.gtkw
+│   │   │   │   ├── div_TB.v
+│   │   │   │   ├── div.v
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── perip_div.gtkw
+│   │   │   │   ├── perip_div_TB.v
+│   │   │   │   └── perip_div.v
+│   │   │   ├── divider_ASM
+│   │   │   │   ├── build
+│   │   │   │   │   └── project.src
+│   │   │   │   ├── div_16
+│   │   │   │   │   ├── control_div.v
+│   │   │   │   │   ├── counter_div.v
+│   │   │   │   │   ├── div_16.gtkw
+│   │   │   │   │   ├── div_16_TB.v
+│   │   │   │   │   ├── div_16.ucf
+│   │   │   │   │   ├── div_16.v
+│   │   │   │   │   ├── final_result.v
+│   │   │   │   │   ├── lsr_div.v
+│   │   │   │   │   ├── Makefile
+│   │   │   │   │   ├── Makefile.lattice
+│   │   │   │   │   └── subtractor.v
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── Makefile.lattice
+│   │   │   │   ├── per_div_sim.gtkw
+│   │   │   │   ├── peripheral_div_TB.v
+│   │   │   │   ├── peripheral_div.v
+│   │   │   │   └── simulation
+│   │   │   │       ├── peripheral_div_TB.vcd
+│   │   │   │       └── peripheral_div_TB.vvp
+│   │   │   ├── dpRAM
+│   │   │   │   ├── dpram.v
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── old
+│   │   │   │   │   ├── dualport_RAM_antigua.v
+│   │   │   │   │   └── dualport_RAM.v
+│   │   │   │   └── perip_dpram.v
+│   │   │   ├── mult
+│   │   │   │   ├── a.out
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── mult_flat.json
+│   │   │   │   ├── mult_flat.svg
+│   │   │   │   ├── mult.gtkw
+│   │   │   │   ├── mult.json
+│   │   │   │   ├── mult.svg
+│   │   │   │   ├── mult_TB.v
+│   │   │   │   ├── mult_TB.vcd
+│   │   │   │   ├── mult.v
+│   │   │   │   ├── perip_mult.gtkw
+│   │   │   │   ├── perip_mult_TB.v
+│   │   │   │   └── perip_mult.v
+│   │   │   ├── mult_ASM
+│   │   │   │   ├── acc.v
+│   │   │   │   ├── a.out
+│   │   │   │   ├── cells_sim.v
+│   │   │   │   ├── comp.v
+│   │   │   │   ├── control_mult.v
+│   │   │   │   ├── gtkwave.tcl
+│   │   │   │   ├── lsr.v
+│   │   │   │   ├── Makefile
+│   │   │   │   ├── Makefile.lattice
+│   │   │   │   ├── mult_32.pcf
+│   │   │   │   ├── mult_32.pdf
+│   │   │   │   ├── mult_32_post_route_TB.v
+│   │   │   │   ├── mult_32_TB.v
+│   │   │   │   ├── mult_32_TB.vcd
+│   │   │   │   ├── mult_32.ucf
+│   │   │   │   ├── mult_32.v
+│   │   │   │   ├── rsr.v
+│   │   │   │   ├── sim_mm.pdf.png
+│   │   │   │   ├── sim_m.pdf.tim
+│   │   │   │   ├── sim_mult.gtkw
+│   │   │   │   ├── sim_mult_post_synt.gtkw
+│   │   │   │   ├── sim_post_route
+│   │   │   │   ├── sim_post_route.gtkw
+│   │   │   │   ├── sims.pdf
+│   │   │   │   ├── simulation
+│   │   │   │   │   ├── control_TB.vcd
+│   │   │   │   │   ├── control_TB.vvp
+│   │   │   │   │   ├── mult_32_TB.vcd
+│   │   │   │   │   ├── mult_32_TB.vvp
+│   │   │   │   │   └── top_multiplier_TB.vvp
+│   │   │   │   ├── SOC.pcf
+│   │   │   │   └── test1.gtkw
+│   │   │   ├── mult_ASM.tgz
+│   │   │   ├── sim_spi_flash
+│   │   │   │   └── spiflash.v
+│   │   │   ├── spi_flash
+│   │   │   │   ├── a.out
+│   │   │   │   ├── Makefile.lattice
+│   │   │   │   ├── MappedSPIFlash.json
+│   │   │   │   ├── MappedSPIFlash_synth.v
+│   │   │   │   ├── MappedSPIFlash_TB.gtkw
+│   │   │   │   ├── MappedSPIFlash_TB.v
+│   │   │   │   ├── MappedSPIFlash_TB.vcd
+│   │   │   │   ├── MappedSPIFlash.v
+│   │   │   │   ├── MappedSPIFlash_V2.v
+│   │   │   │   ├── MappedSPIFlash_V3.v
+│   │   │   │   ├── MappedSPIFlash.v_old
+│   │   │   │   ├── sim_post_syn_PS.vpp
+│   │   │   │   └── synth.log
+│   │   │   └── uart
+│   │   │       ├── perip_uart.v
+│   │   │       └── uart.v
+│   │   ├── femtorv32_flash.py
+│   │   ├── femtorv32.py
+│   │   ├── firmware_flash.hex
+│   │   ├── firmware.hex
+│   │   ├── IC
+│   │   │   ├── femtorv32_quark.v
+│   │   │   ├── MappedSPIFlash.v
+│   │   │   ├── mult.v
+│   │   │   ├── perip_mult.v
+│   │   │   ├── perip_uart.v
+│   │   │   ├── SOC_flash.v
+│   │   │   └── uart.v
+│   │   ├── init_dpram.ini
+│   │   ├── Makefile
+│   │   ├── Makefile.flash
+│   │   ├── Makefile.ice
+│   │   ├── openFPGALoader
+│   │   ├── soc_femto.cst
+│   │   ├── soc_flash_src.tcl
+│   │   ├── SOC_flash_syn_synth.v
+│   │   ├── SOC_flash_TB.v
+│   │   ├── SOC_flash.v
+│   │   ├── SOC_flash.xml
+│   │   ├── SOC_i5.lpf
+│   │   ├── SOC.lpf
+│   │   ├── SOC_old.v
+│   │   ├── SOC.pcf
+│   │   ├── SOC.sdc
+│   │   ├── soc_src.tcl
+│   │   ├── SOC_TB.v
+│   │   ├── SOC.v
+│   │   ├── SOC.xml
+│   │   ├── test_cpu_load_flash.gtkw
+│   │   ├── test_cpu_load_flash_post_synt.gtkw
+│   │   ├── test_cpu_load.gtkw
+│   │   ├── ubtuntu18.04-openFPGALoader.tgz
+│   │   ├── ubtuntu18.04-openFPGALoader.tgz.1
+│   │   ├── wget-log
+│   │   └── wget-log.1
+│   ├── rtl.tgz
+│   ├── SOC_hdl.odg
+│   └── SOC_hdl.pdf
+├── basic.zip
+└── build
+    ├── a.out1
+    ├── bin2bcd_tb.vcd
+    └── bin2bcd_TB.v.out
+
+31 directories, 235 files
